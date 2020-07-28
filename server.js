@@ -30,9 +30,9 @@ class Database {
 const db = new Database({
   host: "localhost",
   port: 3306,
-  user: process.env.DB_USER,
-  password: process.env.DB_PWD,
-  database: process.env.DB_NAME,
+  user: "root",
+  password: "Avinash711",
+  database: "employeeData",
   insecureAuth : true
 });
 
@@ -40,7 +40,7 @@ let response
 let role, department
 
 async function mainApp(){
-    responce = await inquirer.prompt([
+    response = await inquirer.prompt([
         { message: "What would you like to do?", type: "list", name: "action",
         choices: [
             {name: "Manage Departments", value: "department"},
