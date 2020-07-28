@@ -41,7 +41,7 @@ let role, department
 
 async function mainApp(){
     response = await inquirer.prompt([
-        { message: "What would you like to do?", type: "list", name: "action",
+        { message: "Welcome to your employee tracker, what would you like to do?", type: "list", name: "action",
         choices: [
             {name: "Manage Departments", value: "department"},
             {name: "Manage Roles", value: "role"},
